@@ -1,0 +1,17 @@
+{
+    "name": "StatusBank",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "win": "electron-packager . --platform=win32 --arch=x64 --overwrite --icon=app-icon.ico",
+        "mac": "electron-packager . --platform=darwin --arch=x64 --overwrite --icon=app-icon.ico --out=out"
+    },
+    "author": "Vera0011",
+    "license": "ISC",
+    "devDependencies": {
+        "electron": "^17.2.0",
+        "electron-packager": "^15.4.0"
+    }
+}
