@@ -30,7 +30,7 @@ const createWindow = () => {
     // CHROME DEV TOOLS (TESTING)
     // win.webContents.openDevTools();
 
-    win.loadFile(`${__dirname}/src/main/index.html`)
+    win.loadFile(`${__dirname}/src/index.html`)
 
     win.center();
 

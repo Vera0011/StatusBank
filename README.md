@@ -1,2 +1,2 @@
 # StatusBank
-Electron applications, that informs the user about the transactions of his bank account
+Electron application that informs the user about the transactions of his bank account
