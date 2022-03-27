@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StatusBank - Index</title>
+    <title>StatusBank - Inicio</title>
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src * 'self' data: https:;">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'; img-src * 'self' data: https:;"> -->
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/bootstrap-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-lg-top">
         <div class="container-fluid">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav me-auto">
@@ -44,19 +45,32 @@
             </div>
         </div>
     </nav>
-    <!-- <div id="graphic-section"></div> -->
-    <div id="transactions-section">
-        <ul class="list-group">
-            <li class="list-group-item bg-dark">
-                <span class="first-span bg-secondary">Date</span>
-                <!-- <span class="second-span">Info</span> -->
-                <span class="third-span bg-secondary">Import</span>
-            </li>
-        </ul>
+    <div id="parallax-background">
+        <div id="actual-balance">
+            <h3 id="actual-balance-title">Dinero actual:</h3>
+            <h3 id="actual-balance-number">100€</h5>
+        </div>
+        <div id="graphic-section">
+            <h3 id="graphic-title">Gráficos relacionales entre ingresos y gastos:</h3>
+            <div id="pie-graphic-section"></div>
+            <div id="bar-graphic-section"></div>
+        </div>
+        <div id="transactions-section">
+            <h3 id="transactions-title">Transacciones recientes:</h3>
+            <ul class="list-group">
+                <li class="list-group-item bg-dark">
+                    <span class="first-span">Date</span>
+                    <span class="second-span">Info</span>
+                    <span class="third-span">Import</span>
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="../js/bootstrap-bundle-min.js" type="module"></script>
-    <script src="../js/index.js"></script>
     <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/billboard.js/dist/billboard.min.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>
